@@ -1,0 +1,106 @@
+:root {
+	--wine-red: #c7375f;
+	--bright-red: #d42d2f;
+	--dark-green: #344d2f;
+	--light-green: #77a047;
+	--gold: #fac57d;
+	--snow: #f0f4f7;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: url(https://cf.ltkcdn.net/christmas/images/orig/274931-2131x1407-christmas-ornament.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+
+	font-family: "Dancing Script", cursive;
+	text-align: center;
+	color: var(--dark-green);
+}
+
+.title {
+	font-weight: 700;
+	font-size: 4rem;
+	text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+}
+
+.countdown {
+	display: flex;
+	gap: 10px;
+}
+
+.countdown__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--snow);
+	background: var(--bright-red);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px 0px, rgba(0, 0, 0, 0.3) 0px 6px 6px 0px;
+}
+
+.countdown__item__number {
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 5rem;
+	margin: 0 10px;
+	padding: 0;
+	text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+}
+
+.countdown__item__text {
+	font-size: 2rem;
+	margin: 0 0 10px 0;
+	padding: 0;
+	text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+}
+
+@media (max-width: 500px) {
+	.countdown__item__number {
+		font-size: 4rem;
+	}
+
+	.countdown__item__text,
+	.text {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 430px) {
+	.countdown__item__number {
+		font-size: 2.6rem;
+	}
+
+	.countdown__item__text,
+	.text {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.countdown__item__number {
+		font-size: 2.6rem;
+	}
+
+	.countdown__item__text,
+	.text {
+		font-size: 1rem;
+	}
+}
+
+.text {
+	font-weight: 700;
+	font-size: 3rem;
+	text-shadow: rgba(0, 0, 0, 0.1) 0px 6px 6px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+}
